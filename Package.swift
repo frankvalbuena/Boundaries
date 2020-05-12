@@ -13,11 +13,12 @@ let package = Package(
     targets: [
         .target(
             name: "Boundaries",
-            dependencies: []
+            path: "Boundaries"
         ),
         .testTarget(
             name: "BoundariesTests",
-            dependencies: ["Boundaries"]
+            dependencies: ["Boundaries"],
+            path: "BoundariesTests"
         ),
     ]
 )
