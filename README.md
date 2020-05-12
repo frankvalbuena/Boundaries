@@ -166,7 +166,7 @@ final class Service: AdapterBoundary {
     // In order for implementing this you may need to depend on other boundary.
     typealias Dependencies = BoundaryList.Add<AFrameworkRelatedBoundary>
     
-    // This function is part of AdapterBoundary and is the place where you create the plugin implementation.
+    // This function is part of AdapterBoundary. This is the place where you create the plugin implementation.
     func makePlugin() -> UseCase.Plugin {
         // Create the input ports of the plugins, providing the implementation.
         return ModelBoundary.Plugin(
@@ -200,7 +200,7 @@ final class PaymentsBoundary: ContainerBoundary {
     // Boundary itself remains private. This protects the encapsulation and the access to 
     // internal dependencies of the boundary
     lazy var model: ModelBoundary.Resolved = {
-        Call the inherited function `resolver(for:)` which gives you a builder for your dependency.
+        // Call the inherited function `resolver(for:)` which gives you a builder for your dependency.
         return resolver(for: Model.self).
             .resolve(plugin: self.service) // You connect the plugin with the adapter here
             .resolved() // After resolving each dependency, you call .resolved() and you are done.
