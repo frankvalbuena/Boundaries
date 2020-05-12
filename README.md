@@ -24,7 +24,7 @@ github "frankvalbuena/Boundaries" ~> 1.0
 
 ### Swift Package Manager
 
-For adding Boundaries as a dependency in your project, using the Swift Package Manager,  add the github URL in your dependencies, targeting the latest version available. Or use Xcode option  file/Swift Packages/Add Dependency, add the github URL and that's it.
+For adding Boundaries as a dependency in your project, using the [Swift Package Manager](https://swift.org/package-manager/),  add the github URL in your dependencies, targeting the latest version available. Or use [Xcode option](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app)  `file > Swift Packages > Add Dependency`, add the github URL and that's it.
 
 ```swift
 dependencies: [
