@@ -10,6 +10,27 @@ The main propose of the framework is to enfoce boundaries and with them your cho
 
 There's an example app that was easily refactored with this framework [here](https://github.com/frankvalbuena/iOS-Clean-Architecture-Example). You will notice that the number of imports of the framework is reduced to the files definining the boundaries. The 99% of the code remained untouched.
 
+## Instalation
+
+The framework has support for Carthage and the Swift Package Manager. It supports Mac OS, iOS, iPad OS and Watch OS. It's built on Swift version 5.2.
+
+### Carthage
+
+For adding Boundaries as a dependency in your project, using [Carthage](https://github.com/Carthage/Carthage),  add the github URL in your `Cartfile` using semantic versioning, pointing to the latest version available.
+
+```ogdl
+github "frankvalbuena/Boundaries" ~> 1.0
+```
+
+### Swift Package Manager
+
+For adding Boundaries as a dependency in your project, using the Swift Package Manager,  add the github URL in your dependencies, targeting the latest version available. Or use Xcode option  file/Swift Packages/Add Dependency, add the github URL and that's it.
+
+```swift
+dependencies: [
+    .package(url: "frankvalbuena/Boundaries", .upToNextMajor(from: "1.0.0"))
+]
+```
 
 ## Defining a Boundary
 
