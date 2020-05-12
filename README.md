@@ -1,4 +1,6 @@
-![Logo](https://github.com/frankvalbuena/Boundaries/blob/master/Documentation/logo.jpg)
+<p align="center">
+  <img width="621" height="72" src="https://github.com/frankvalbuena/Boundaries/blob/master/Documentation/logo.jpg">
+</p>
 
 Boundaries is a lightweight framework for creating [source-level boundaries in swift](https://medium.com/@frankvalbuenam/source-level-boundaries-in-swift-e97027abcb1e). It's based on the premise that for enforcing source level boundaries you need to manage the object graph construction based on boundary crossing rules. This framework is useful whether your app is modularized or whether you have all the code under a single module. This is because packages are only a mechanism for deploying and reusing code, but you still need to manage the source code dependencies and handling the object graph construction, for having real boundaries in your code. 
 
@@ -225,7 +227,7 @@ final class ApplicationBoundary: RootBoundary {
     
     // Define a input port for the root view controller.
     var rootView: InputPort<UIViewController> {
-        // navigationBoundary is 
+        // navigationBoundary is a subboundary of the root boundary.
         return makeInputPort(implementation: self.navigationBoundary.launchView)
     }
     
