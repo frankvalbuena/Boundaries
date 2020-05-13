@@ -75,7 +75,7 @@ On the previous example, let's create a boundary for a Presenter Layer, which de
 
 ### Input Ports: 
 
-On the Dependee Boundary, in this example the `ModelBoundary`, declare the properties meant to be accesible from outside of the Boundary with the generic type `InputPort`.
+On the Dependee Boundary, in this example the `ModelBoundary`, declare the properties meant to be accessible from outside of the Boundary with the generic type `InputPort`.
 
 
 ```Swift
@@ -98,7 +98,7 @@ On the Dependent Boundary, in this example `PresenterBoundary`, link the Depende
 typealias Dependencies = BoundaryList.Add<THE_DEPENDEE_BOUNDARY_HERE>
 ```
 
-This makes all the input ports of `ModelBoundary` accesible for `PresenterBoundary`, via the dependencies property inherited from `Boundary`. See the example below:
+This makes all the input ports of `ModelBoundary` accessible for `PresenterBoundary`, via the dependencies property inherited from `Boundary`. See the example below:
 
 
 ```Swift
