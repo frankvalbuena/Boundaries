@@ -65,11 +65,11 @@ final class ModelBoundary: Boundary {
 }
 ```
 
-In the example above `ModelBoundary` is declared as a subclass of Boundary. You can declare properties for each object constructed inside the boundary. Use a stored property if you want to have a single instance or a computed property if you want to create a new one on demand. Also notice that the required initializer prevents you from directly instantiating your boundary. This decision was made on propose, as a way to prevent your boundary to become singletons, which is an [antipattern](https://www.youtube.com/watch?v=-FRm3VPhseI&t=36s) widely used by dependency containers. Instead a boundary must be always initialized by a Container which is meant to build the Boundary Graph.
+In the example above `ModelBoundary` is declared as a subclass of Boundary. You can declare properties for each object constructed inside the boundary. Use a stored property if you want to have a single instance or a computed property if you want to create a new one on demand. Also notice that the required initializer prevents you from directly instantiating your boundary. This decision was made on purpose, as a way to prevent your boundary to become singletons, which is an [antipattern](https://www.youtube.com/watch?v=-FRm3VPhseI&t=36s) widely used by dependency containers. Instead a boundary must be always initialized by a Container which is meant to build the Boundary Graph.
 
 ## Dependencies
 
-Each boundary must create objects related to a single area of concern, like a Layer, a Feature, etc. You define the propose of your boundary. Boundaries collaborate between them, in the same way layers or components are structured to form a collaborative system together. 
+Each boundary must create objects related to a single area of concern, like a Layer, a Feature, etc. You define the purpose of your boundary. Boundaries collaborate between them, in the same way layers or components are structured to form a collaborative system together. 
 
 On the previous example, let's create a boundary for a Presenter Layer, which depends on `ModelBoundary`. This is done in 2 steps:
 
@@ -122,7 +122,7 @@ Notice that only by declaring the typealias you can access the input ports of Mo
 
 ## Plugins
 
-Another way to declare dependencies is by using [dependency inversion](https://en.wikipedia.org/wiki/Dependency_inversion_principle). So instead of depending on a existing boundary, the boundary itself can define an abstract boundary that can be implemented by other boundary. The benefit of doing this ofcourse is that you avoid depending on especific boundaries, making your boundaries independently deployable. This is usually called [Plugin Architecture](https://en.wikipedia.org/wiki/Plug-in_(computing)).
+Another way to declare dependencies is by using [dependency inversion](https://en.wikipedia.org/wiki/Dependency_inversion_principle). So instead of depending on a existing boundary, the boundary itself can define an abstract boundary that can be implemented by other boundary. The benefit of doing this of course is that you avoid depending on especific boundaries, making your boundaries independently deployable. This is usually called [Plugin Architecture](https://en.wikipedia.org/wiki/Plug-in_(computing)).
 
 On the previous example let's create a plugin for handling the persistence and webservices for the `ModelBoundary`. You can do this in 2 steps:
 
@@ -157,17 +157,17 @@ final class ModelBoundary: Boundary {
 
 ### Plugin Adapters
 
-Now that you have declared your plugin, you must implement it by an Adapter Boundary.  Let's create a services layer acting as an adapter for the ModelBoundary's Plugin. In order for doing this, you define a new boundary inheriting from `AdapterBoundary` like this:
+Now that you have declared your plugin, you must implement it by an Adapter Boundary.  Let's create a services layer acting as an adapter for the ModelBoundary's Plugin. In order to do this, you define a new boundary inheriting from `AdapterBoundary` like this:
 
 ```swift
 final class Service: AdapterBoundary {
     // This part of the AdapterBoundary, you must define a typealias of the plugin you are implementing.
     typealias PluginAdaptee = ModelBoundary.Plugin
-    // In order for implementing this you may need to depend on other boundary.
+    // In order to implement this you may need to depend on other boundary.
     typealias Dependencies = BoundaryList.Add<AFrameworkRelatedBoundary>
     
     // This function is part of AdapterBoundary. This is the place where you create the plugin implementation.
-    func makePlugin() -> UseCase.Plugin {
+    func makePlugin() -> ModelBoundary.Plugin {
         // Create the input ports of the plugins, providing the implementation.
         return ModelBoundary.Plugin(
             paymentPersistence: makeInputPort(implementation: CoreDataPaymentPersistence()),
@@ -252,7 +252,7 @@ final class ApplicationBoundary: RootBoundary {
         return makeInputPort(implementation: self.navigationBoundary.launchView)
     }
     
-    // In here create your subboundaries using the resolver API... look the Container Boundary for knowing how to do this.
+    // In here create your subboundaries using the resolver API... look at the Container Boundary to know how to do this.
     var navigationBoundary: NavigationBoundary.Resolved {
         //... create your subboundary.
     }
