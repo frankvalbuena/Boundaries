@@ -8,7 +8,7 @@ The framework is designed to be as unintrusive as possible, it won't pollute you
 
 The main propose of the framework is to enfoce boundaries and with them your chosen architecture. This implies having a framework that doesn't imply too much compromise on your code. It doesn't enforces any particular architectural pattern, but rather gives you a tool for helping on the implementation by enforcing your boundaries directly on code.
 
-There's an example app that was easily refactored with this framework [here](https://github.com/frankvalbuena/iOS-Clean-Architecture-Example). You will notice that the number of imports of the framework is reduced to the files definining the boundaries. The 99% of the code remained untouched. Look in the [reference](https://github.com/frankvalbuena/Boundaries/blob/master/Documentation/index.html) for a more detailed documentation.
+There's an example app that was easily refactored with this framework [here](https://github.com/frankvalbuena/iOS-Clean-Architecture-Example). You will notice that the number of imports of the framework is reduced to the files definining the boundaries. The 99% of the code remained untouched. Look in the [reference](https://frankvalbuena.github.io/Boundaries/) for a more detailed documentation.
 
 ## Instalation
 

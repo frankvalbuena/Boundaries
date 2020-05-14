@@ -1,0 +1,887 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Boundary.swift",
+      "line": 14,
+      "symbol": "BoundaryProtocol.Dependencies",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Boundary.swift",
+      "line": 22,
+      "symbol": "Empty.Dependencies",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Factory.swift",
+      "line": 17,
+      "symbol": "Factory.init(construction:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Factory.swift",
+      "line": 21,
+      "symbol": "Factory.callAsFunction(configuration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 14,
+      "symbol": "BoundaryListProtocol.Boundary1",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 15,
+      "symbol": "BoundaryListProtocol.Boundary2",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 16,
+      "symbol": "BoundaryListProtocol.Boundary3",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 17,
+      "symbol": "BoundaryListProtocol.Boundary4",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 18,
+      "symbol": "BoundaryListProtocol.Boundary5",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 19,
+      "symbol": "BoundaryListProtocol.Boundary6",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 20,
+      "symbol": "BoundaryListProtocol.Boundary7",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 21,
+      "symbol": "BoundaryListProtocol.Boundary8",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 22,
+      "symbol": "BoundaryListProtocol.Boundary9",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 23,
+      "symbol": "BoundaryListProtocol.Boundary10",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 24,
+      "symbol": "BoundaryListProtocol.Boundary11",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 25,
+      "symbol": "BoundaryListProtocol.Boundary12",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 26,
+      "symbol": "BoundaryListProtocol.Boundary13",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 27,
+      "symbol": "BoundaryListProtocol.Boundary14",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 28,
+      "symbol": "BoundaryListProtocol.Boundary15",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 29,
+      "symbol": "BoundaryListProtocol.Boundary16",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 30,
+      "symbol": "BoundaryListProtocol.Boundary17",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 31,
+      "symbol": "BoundaryListProtocol.Boundary18",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 32,
+      "symbol": "BoundaryListProtocol.Boundary19",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 33,
+      "symbol": "BoundaryListProtocol.Boundary20",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 35,
+      "symbol": "BoundaryListProtocol.boundary1",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 36,
+      "symbol": "BoundaryListProtocol.boundary2",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 37,
+      "symbol": "BoundaryListProtocol.boundary3",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 38,
+      "symbol": "BoundaryListProtocol.boundary4",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 39,
+      "symbol": "BoundaryListProtocol.boundary5",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 40,
+      "symbol": "BoundaryListProtocol.boundary6",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 41,
+      "symbol": "BoundaryListProtocol.boundary7",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 42,
+      "symbol": "BoundaryListProtocol.boundary8",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 43,
+      "symbol": "BoundaryListProtocol.boundary9",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 44,
+      "symbol": "BoundaryListProtocol.boundary10",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 45,
+      "symbol": "BoundaryListProtocol.boundary11",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 46,
+      "symbol": "BoundaryListProtocol.boundary12",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 47,
+      "symbol": "BoundaryListProtocol.boundary13",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 48,
+      "symbol": "BoundaryListProtocol.boundary14",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 49,
+      "symbol": "BoundaryListProtocol.boundary15",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 50,
+      "symbol": "BoundaryListProtocol.boundary16",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 51,
+      "symbol": "BoundaryListProtocol.boundary17",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 52,
+      "symbol": "BoundaryListProtocol.boundary18",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 53,
+      "symbol": "BoundaryListProtocol.boundary19",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 54,
+      "symbol": "BoundaryListProtocol.boundary20",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 73,
+      "symbol": "AnyBoundaryList.LastDependency",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 75,
+      "symbol": "AnyBoundaryList.boundary1",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 76,
+      "symbol": "AnyBoundaryList.boundary2",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 77,
+      "symbol": "AnyBoundaryList.boundary3",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 78,
+      "symbol": "AnyBoundaryList.boundary4",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 79,
+      "symbol": "AnyBoundaryList.boundary5",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 80,
+      "symbol": "AnyBoundaryList.boundary6",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 81,
+      "symbol": "AnyBoundaryList.boundary7",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 82,
+      "symbol": "AnyBoundaryList.boundary8",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 83,
+      "symbol": "AnyBoundaryList.boundary9",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 84,
+      "symbol": "AnyBoundaryList.boundary10",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 85,
+      "symbol": "AnyBoundaryList.boundary11",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 86,
+      "symbol": "AnyBoundaryList.boundary12",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 87,
+      "symbol": "AnyBoundaryList.boundary13",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 88,
+      "symbol": "AnyBoundaryList.boundary14",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 89,
+      "symbol": "AnyBoundaryList.boundary15",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 90,
+      "symbol": "AnyBoundaryList.boundary16",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 91,
+      "symbol": "AnyBoundaryList.boundary17",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 92,
+      "symbol": "AnyBoundaryList.boundary18",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 93,
+      "symbol": "AnyBoundaryList.boundary19",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 94,
+      "symbol": "AnyBoundaryList.boundary20",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 210,
+      "symbol": "BoundaryListProtocol.Replace1",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 214,
+      "symbol": "BoundaryListProtocol.Replace2",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 218,
+      "symbol": "BoundaryListProtocol.Replace3",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 222,
+      "symbol": "BoundaryListProtocol.Replace4",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 226,
+      "symbol": "BoundaryListProtocol.Replace5",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 230,
+      "symbol": "BoundaryListProtocol.Replace6",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 234,
+      "symbol": "BoundaryListProtocol.Replace7",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 238,
+      "symbol": "BoundaryListProtocol.Replace8",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 242,
+      "symbol": "BoundaryListProtocol.Replace9",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 246,
+      "symbol": "BoundaryListProtocol.Replace10",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 250,
+      "symbol": "BoundaryListProtocol.Replace11",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 254,
+      "symbol": "BoundaryListProtocol.Replace12",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 258,
+      "symbol": "BoundaryListProtocol.Replace13",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 262,
+      "symbol": "BoundaryListProtocol.Replace14",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 266,
+      "symbol": "BoundaryListProtocol.Replace15",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 270,
+      "symbol": "BoundaryListProtocol.Replace16",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 274,
+      "symbol": "BoundaryListProtocol.Replace17",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 278,
+      "symbol": "BoundaryListProtocol.Replace18",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 282,
+      "symbol": "BoundaryListProtocol.Replace19",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/List.swift",
+      "line": 286,
+      "symbol": "BoundaryListProtocol.Replace20",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 28,
+      "symbol": "Resolved.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 58,
+      "symbol": "ResolverStack.NextAfterDependency1",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 67,
+      "symbol": "ResolverStack.NextAfterDependency2",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 76,
+      "symbol": "ResolverStack.NextAfterDependency3",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 85,
+      "symbol": "ResolverStack.NextAfterDependency4",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 94,
+      "symbol": "ResolverStack.NextAfterDependency5",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 103,
+      "symbol": "ResolverStack.NextAfterDependency6",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 112,
+      "symbol": "ResolverStack.NextAfterDependency7",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 121,
+      "symbol": "ResolverStack.NextAfterDependency8",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 130,
+      "symbol": "ResolverStack.NextAfterDependency9",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 139,
+      "symbol": "ResolverStack.NextAfterDependency10",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 148,
+      "symbol": "ResolverStack.NextAfterDependency11",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 157,
+      "symbol": "ResolverStack.NextAfterDependency12",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 166,
+      "symbol": "ResolverStack.NextAfterDependency13",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 175,
+      "symbol": "ResolverStack.NextAfterDependency14",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 184,
+      "symbol": "ResolverStack.NextAfterDependency15",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 193,
+      "symbol": "ResolverStack.NextAfterDependency16",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 202,
+      "symbol": "ResolverStack.NextAfterDependency17",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 211,
+      "symbol": "ResolverStack.NextAfterDependency18",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 220,
+      "symbol": "ResolverStack.NextAfterDependency19",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 229,
+      "symbol": "ResolverStack.NextAfterDependency20",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 240,
+      "symbol": "ResolverStack.NextAfterPlugin1",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 251,
+      "symbol": "ResolverStack.NextAfterPlugin2",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 262,
+      "symbol": "ResolverStack.NextAfterPlugin3",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 273,
+      "symbol": "ResolverStack.NextAfterPlugin4",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 284,
+      "symbol": "ResolverStack.NextAfterPlugin5",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 295,
+      "symbol": "ResolverStack.NextAfterPlugin6",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 306,
+      "symbol": "ResolverStack.NextAfterPlugin7",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 317,
+      "symbol": "ResolverStack.NextAfterPlugin8",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 328,
+      "symbol": "ResolverStack.NextAfterPlugin9",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 339,
+      "symbol": "ResolverStack.NextAfterPlugin10",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 350,
+      "symbol": "ResolverStack.NextAfterPlugin11",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 361,
+      "symbol": "ResolverStack.NextAfterPlugin12",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 372,
+      "symbol": "ResolverStack.NextAfterPlugin13",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 383,
+      "symbol": "ResolverStack.NextAfterPlugin14",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 394,
+      "symbol": "ResolverStack.NextAfterPlugin15",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 405,
+      "symbol": "ResolverStack.NextAfterPlugin16",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 416,
+      "symbol": "ResolverStack.NextAfterPlugin17",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 427,
+      "symbol": "ResolverStack.NextAfterPlugin18",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 438,
+      "symbol": "ResolverStack.NextAfterPlugin19",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/frankvalbuena/Developer/Github/Boundaries/Boundaries/Resolver.swift",
+      "line": 449,
+      "symbol": "ResolverStack.NextAfterPlugin20",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/frankvalbuena/Developer/Github/Boundaries"
+}
