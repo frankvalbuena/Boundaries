@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// A simple factory based on Swift Callable API. it takes a closure and creates a
+/// A simple factory based on Swift Callable API. It takes a closure and creates a
 /// callable struct that will invoke the closure. This allows you to create inline factories
 /// in your Boundaries.
 public struct Factory<Configuration, Interface> {

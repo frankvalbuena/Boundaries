@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ContainerBoundaryProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/ContainerBoundaryProtocol" class="dashAnchor"></a>
+    <a title="ContainerBoundaryProtocol Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (58% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ContainerBoundaryProtocol Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AnyBoundary.html">AnyBoundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AnyBoundary.html#/s:10Boundaries11AnyBoundaryC9InternalsV">– Internals</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AdapterBoundaryProtocol.html">AdapterBoundaryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BoundaryListProtocol.html">BoundaryListProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ContainerBoundaryProtocol.html">ContainerBoundaryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:10Boundaries14PluginBoundaryP">PluginBoundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:10Boundaries20RootBoundaryProtocolP">RootBoundaryProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AnyBoundaryList.html">AnyBoundaryList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Empty.html">Empty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Factory.html">Factory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Resolved.html">Resolved</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResolverStack.html">ResolverStack</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10Boundaries15AdapterBoundarya">AdapterBoundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10Boundaries12BoundaryLista">BoundaryList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10Boundaries17ContainerBoundarya">ContainerBoundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10Boundaries12RootBoundarya">RootBoundary</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ContainerBoundaryProtocol</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ContainerBoundaryProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Classes/AnyBoundary.html">AnyBoundary</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Protocol for Container Boundaries. A container is simply a boundary that contains
+other children boundaries. This gives makes the boundary composable. Never use this protocol directly
+Instead inherit from ContainerBoundary.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa"></a>
+                    <a name="//apple_ref/swift/Alias/Subboundaries" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subboundaries associated type. This must be definined using BoundaryList using this syntax:
+typealias Subboundaries = BoundaryList.Add<YOUR_SUBBOUNDARY_HERE>
+You can add up to 20 subboundaries. A container has the ability to build its children, using the
+Resolver API.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">associatedtype</span> <span class="kt">Subboundaries</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryListProtocol.html">BoundaryListProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary1%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary1`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary1%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary1</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary1RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary1RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary1</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary1</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary2%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary2`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary2%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary2</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary2RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary2RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary2</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary2</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary3%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary3`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary3%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary3</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary3RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary3RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary3</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary3</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary4%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary4`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary4%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary4</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary4RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary4RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary4</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary4</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary5%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary5`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary5%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary5</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary5RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary5RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary5</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary5</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary6%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary6`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary6%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary6</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary6RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary6RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary6</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary6</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary7%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary7`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary7%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary7</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary7RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary7RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary7</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary7</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary8%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary8`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary8%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary8</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary8RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary8RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary8</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary8</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary9%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary9`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary9%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary9</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary9RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_9Boundary9RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary9</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary9</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary10%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary10`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary10%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary10</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary10RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary10RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary10</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary10</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary11%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary11`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary11%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary11</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary11RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary11RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary11</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary11</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary12%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary12`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary12%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary12</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary12RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary12RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary12</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary12</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary13%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary13`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary13%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary13</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary13RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary13RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary13</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary13</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary14%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary14`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary14%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary14</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary14RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary14RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary14</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary14</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary15%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary15`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary15%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary15</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary15RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary15RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary15</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary15</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary16%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary16`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary16%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary16</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary16RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary16RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary16</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary16</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary17%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary17`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary17%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary17</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary17RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary17RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary17</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary17</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary18%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary18`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary18%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary18</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary18RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary18RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary18</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary18</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary19%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary19`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary19%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary19</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary19RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary19RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary19</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary19</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Subboundaries.Boundary20%60:%20%60Boundary%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Subboundaries.Boundary20`: `Boundary`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Subboundaries.Boundary20%60:%20%60Boundary%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Subboundaries.Boundary20</code>: <code><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary20RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolver(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolPA2A03AnyC0C13Subboundaries_10Boundary20RCzrlE8resolver3forAA13ResolverStackVyAhA0eC4ListVyAA5EmptyVA19PGGAHm_tF">resolver(for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a resolver for the subboundary. The subboundary must be added on the Subboundaries typealias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resolver</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary20</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/ContainerBoundaryProtocol.html#/s:10Boundaries25ContainerBoundaryProtocolP13SubboundariesQa">Subboundaries</a></span><span class="o">.</span><span class="kt">Boundary20</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-05-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

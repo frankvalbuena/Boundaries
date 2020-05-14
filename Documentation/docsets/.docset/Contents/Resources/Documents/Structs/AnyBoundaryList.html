@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AnyBoundaryList Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/AnyBoundaryList" class="dashAnchor"></a>
+    <a title="AnyBoundaryList Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (58% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AnyBoundaryList Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AnyBoundary.html">AnyBoundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AnyBoundary.html#/s:10Boundaries11AnyBoundaryC9InternalsV">– Internals</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AdapterBoundaryProtocol.html">AdapterBoundaryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BoundaryListProtocol.html">BoundaryListProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ContainerBoundaryProtocol.html">ContainerBoundaryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:10Boundaries14PluginBoundaryP">PluginBoundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:10Boundaries20RootBoundaryProtocolP">RootBoundaryProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AnyBoundaryList.html">AnyBoundaryList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Empty.html">Empty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Factory.html">Factory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Resolved.html">Resolved</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResolverStack.html">ResolverStack</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10Boundaries15AdapterBoundarya">AdapterBoundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10Boundaries12BoundaryLista">BoundaryList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10Boundaries17ContainerBoundarya">ContainerBoundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10Boundaries12RootBoundarya">RootBoundary</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AnyBoundaryList</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@dynamicMemberLookup</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AnyBoundaryList</span><span class="o">&lt;</span>
+    <span class="kt">Boundary1</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary2</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary3</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary4</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary5</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span>
+    <span class="kt">Boundary6</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary7</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary8</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary9</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary10</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span>
+    <span class="kt">Boundary11</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary12</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary13</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary14</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary15</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span>
+    <span class="kt">Boundary16</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary17</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary18</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary19</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="p">,</span> <span class="kt">Boundary20</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span>
+    <span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryListProtocol.html">BoundaryListProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A type earasure for <code><a href="../Protocols/BoundaryListProtocol.html">BoundaryListProtocol</a></code>, it dynamically look up for boundary input ports.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV14LastDependencya"></a>
+                    <a name="//apple_ref/swift/Alias/LastDependency" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV14LastDependencya">LastDependency</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">LastDependency</span> <span class="o">=</span> <span class="kt">Boundary5</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV9boundary1xvp"></a>
+                    <a name="//apple_ref/swift/Property/boundary1" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV9boundary1xvp">boundary1</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary1</span><span class="p">:</span> <span class="kt">Boundary1</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV9boundary2q_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary2" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV9boundary2q_vp">boundary2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary2</span><span class="p">:</span> <span class="kt">Boundary2</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV9boundary3q0_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary3" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV9boundary3q0_vp">boundary3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary3</span><span class="p">:</span> <span class="kt">Boundary3</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV9boundary4q1_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary4" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV9boundary4q1_vp">boundary4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary4</span><span class="p">:</span> <span class="kt">Boundary4</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV9boundary5q2_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary5" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV9boundary5q2_vp">boundary5</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary5</span><span class="p">:</span> <span class="kt">Boundary5</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV9boundary6q3_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary6" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV9boundary6q3_vp">boundary6</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary6</span><span class="p">:</span> <span class="kt">Boundary6</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV9boundary7q4_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary7" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV9boundary7q4_vp">boundary7</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary7</span><span class="p">:</span> <span class="kt">Boundary7</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV9boundary8q5_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary8" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV9boundary8q5_vp">boundary8</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary8</span><span class="p">:</span> <span class="kt">Boundary8</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV9boundary9q6_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary9" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV9boundary9q6_vp">boundary9</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary9</span><span class="p">:</span> <span class="kt">Boundary9</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV10boundary10q7_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary10" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV10boundary10q7_vp">boundary10</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary10</span><span class="p">:</span> <span class="kt">Boundary10</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV10boundary11q8_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary11" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV10boundary11q8_vp">boundary11</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary11</span><span class="p">:</span> <span class="kt">Boundary11</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV10boundary12q9_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary12" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV10boundary12q9_vp">boundary12</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary12</span><span class="p">:</span> <span class="kt">Boundary12</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV10boundary13q10_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary13" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV10boundary13q10_vp">boundary13</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary13</span><span class="p">:</span> <span class="kt">Boundary13</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV10boundary14q11_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary14" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV10boundary14q11_vp">boundary14</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary14</span><span class="p">:</span> <span class="kt">Boundary14</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV10boundary15q12_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary15" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV10boundary15q12_vp">boundary15</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary15</span><span class="p">:</span> <span class="kt">Boundary15</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV10boundary16q13_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary16" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV10boundary16q13_vp">boundary16</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary16</span><span class="p">:</span> <span class="kt">Boundary16</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV10boundary17q14_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary17" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV10boundary17q14_vp">boundary17</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary17</span><span class="p">:</span> <span class="kt">Boundary17</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV10boundary18q15_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary18" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV10boundary18q15_vp">boundary18</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary18</span><span class="p">:</span> <span class="kt">Boundary18</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV10boundary19q16_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary19" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV10boundary19q16_vp">boundary19</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary19</span><span class="p">:</span> <span class="kt">Boundary19</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV10boundary20q17_vp"></a>
+                    <a name="//apple_ref/swift/Property/boundary20" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV10boundary20q17_vp">boundary20</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">boundary20</span><span class="p">:</span> <span class="kt">Boundary20</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyxAA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyxAA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary1</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary2</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq0_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq0_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary3</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq1_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq1_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary4</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq2_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq2_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary5</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq3_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq3_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary6</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq4_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq4_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary7</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq5_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq5_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary8</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq6_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq6_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary9</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq7_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq7_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary10</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq8_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq8_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary11</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq9_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq9_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary12</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq10_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq10_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary13</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq11_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq11_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary14</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq12_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq12_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary15</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq13_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq13_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary16</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq14_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq14_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary17</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq15_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq15_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary18</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq16_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq16_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary19</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq17_AA9InputPortVyqd__GG_tcluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dynamicMember:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListV13dynamicMemberqd__s7KeyPathCyq17_AA9InputPortVyqd__GG_tcluip">subscript(dynamicMember:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dynamic Look-Up for InputPort of Dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">dynamicMember</span> <span class="nv">dynamicMember</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Boundary20</span><span class="p">,</span> <span class="kt"><a href="../Structs.html#/s:10Boundaries9InputPortV">InputPort</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60LastDependency%60%20==%20%60Empty%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `LastDependency` == `Empty`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60LastDependency%60%20==%20%60Empty%60"></a>
+                  <h3 class="section-name"><p>Available where <code><a href="../Structs/AnyBoundaryList.html#/s:10Boundaries15AnyBoundaryListV14LastDependencya">LastDependency</a></code> == <code><a href="../Structs/Empty.html">Empty</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries15AnyBoundaryListVA2A5EmptyVRs2_rlE3Adda"></a>
+                    <a name="//apple_ref/swift/Alias/Add" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries15AnyBoundaryListVA2A5EmptyVRs2_rlE3Adda">Add</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add operator inserts a boundary in the first position of the list by the generic type you pass.
+the last item will be dropped. So you can only add a boundary if the last position has an empty boundary.
+You can only add types conforming to BoundaryProtocol.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">Add</span><span class="o">&lt;</span><span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></span><span class="p">:</span> <span class="kt"><a href="../Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="kt">AnyBoundaryList</span><span class="o">&lt;</span>
+    <span class="kt"><a href="../Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a></span><span class="p">,</span> <span class="kt">Boundary1</span><span class="p">,</span> <span class="kt">Boundary2</span><span class="p">,</span> <span class="kt">Boundary3</span><span class="p">,</span> <span class="kt">Boundary4</span><span class="p">,</span> <span class="kt">Boundary5</span><span class="p">,</span> <span class="kt">Boundary6</span><span class="p">,</span> <span class="kt">Boundary7</span><span class="p">,</span> <span class="kt">Boundary8</span><span class="p">,</span> <span class="kt">Boundary9</span><span class="p">,</span> <span class="kt">Boundary10</span><span class="p">,</span>
+    <span class="kt">Boundary11</span><span class="p">,</span> <span class="kt">Boundary12</span><span class="p">,</span> <span class="kt">Boundary13</span><span class="p">,</span> <span class="kt">Boundary14</span><span class="p">,</span> <span class="kt">Boundary15</span><span class="p">,</span> <span class="kt">Boundary16</span><span class="p">,</span> <span class="kt">Boundary17</span><span class="p">,</span> <span class="kt">Boundary18</span><span class="p">,</span> <span class="kt">Boundary19</span>
+<span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-05-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

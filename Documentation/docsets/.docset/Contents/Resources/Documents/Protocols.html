@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Protocols" class="dashAnchor"></a>
+    <a title="Protocols  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (58% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Protocols  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AnyBoundary.html">AnyBoundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AnyBoundary.html#/s:10Boundaries11AnyBoundaryC9InternalsV">– Internals</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/AdapterBoundaryProtocol.html">AdapterBoundaryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/BoundaryListProtocol.html">BoundaryListProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/BoundaryProtocol.html">BoundaryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ContainerBoundaryProtocol.html">ContainerBoundaryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:10Boundaries14PluginBoundaryP">PluginBoundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:10Boundaries20RootBoundaryProtocolP">RootBoundaryProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/AnyBoundaryList.html">AnyBoundaryList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Empty.html">Empty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Factory.html">Factory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:10Boundaries9InputPortV">InputPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Resolved.html">Resolved</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ResolverStack.html">ResolverStack</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10Boundaries15AdapterBoundarya">AdapterBoundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10Boundaries8Boundarya">Boundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10Boundaries12BoundaryLista">BoundaryList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10Boundaries17ContainerBoundarya">ContainerBoundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10Boundaries8Resolvera">Resolver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10Boundaries12RootBoundarya">RootBoundary</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries16BoundaryProtocolP"></a>
+                    <a name="//apple_ref/swift/Protocol/BoundaryProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries16BoundaryProtocolP">BoundaryProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A boundary is a model for handling the object graph construction of a group of objects.
+Never use this protocol directly instead inherit from Boundary, Adapter, Container or RootBoundary</p>
+
+                        <a href="Protocols/BoundaryProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BoundaryProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries25ContainerBoundaryProtocolP"></a>
+                    <a name="//apple_ref/swift/Protocol/ContainerBoundaryProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries25ContainerBoundaryProtocolP">ContainerBoundaryProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol for Container Boundaries. A container is simply a boundary that contains
+other children boundaries. This gives makes the boundary composable. Never use this protocol directly
+Instead inherit from ContainerBoundary.</p>
+
+                        <a href="Protocols/ContainerBoundaryProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ContainerBoundaryProtocol</span> <span class="p">:</span> <span class="kt"><a href="Classes/AnyBoundary.html">AnyBoundary</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries20BoundaryListProtocolP"></a>
+                    <a name="//apple_ref/swift/Protocol/BoundaryListProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries20BoundaryListProtocolP">BoundaryListProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is a protocol listing 10 boundary associatedtypes. This is only for internal use
+please use the concrete type BoundaryList instead.</p>
+
+                        <a href="Protocols/BoundaryListProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BoundaryListProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries14PluginBoundaryP"></a>
+                    <a name="//apple_ref/swift/Protocol/PluginBoundary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries14PluginBoundaryP">PluginBoundary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A boundary protocol for a plugin. A plugin is an abstract boundary, defining input ports.
+Use Structs conforming to this protocol for defining your Plugins. For implementing a plugin
+Use AdapterBoundary</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PluginBoundary</span> <span class="p">:</span> <span class="kt"><a href="Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span> <span class="k">where</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Dependencies</span> <span class="o">==</span> <span class="kt"><a href="Typealiases.html#/s:10Boundaries12BoundaryLista">BoundaryList</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries23AdapterBoundaryProtocolP"></a>
+                    <a name="//apple_ref/swift/Protocol/AdapterBoundaryProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries23AdapterBoundaryProtocolP">AdapterBoundaryProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol for plugin Adapters. Adapters build implementations for plugins.</p>
+
+                        <a href="Protocols/AdapterBoundaryProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AdapterBoundaryProtocol</span> <span class="p">:</span> <span class="kt"><a href="Classes/AnyBoundary.html">AnyBoundary</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/BoundaryProtocol.html">BoundaryProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Boundaries20RootBoundaryProtocolP"></a>
+                    <a name="//apple_ref/swift/Protocol/RootBoundaryProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Boundaries20RootBoundaryProtocolP">RootBoundaryProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A RootBoundary is the root object of the Boundary Graph. Never use this protocol directly. Instead
+inherit from RootBoundary.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RootBoundaryProtocol</span> <span class="p">:</span> <span class="kt"><a href="Protocols/ContainerBoundaryProtocol.html">ContainerBoundaryProtocol</a></span> <span class="k">where</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Dependencies</span> <span class="o">==</span> <span class="kt"><a href="Typealiases.html#/s:10Boundaries12BoundaryLista">BoundaryList</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-05-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

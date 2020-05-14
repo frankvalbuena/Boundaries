@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// This is a protocol listing 10 boundary associatedtypes. This is only for internal use
+/// please use the concrete type BoundaryList instead.
 public protocol BoundaryListProtocol {
     associatedtype Boundary1: BoundaryProtocol
     associatedtype Boundary2: BoundaryProtocol
@@ -51,6 +53,8 @@ public protocol BoundaryListProtocol {
     var boundary19: Boundary19 { get }
     var boundary20: Boundary20 { get }
 }
+
+/// A concrete BoundaryList, it's made of empty boundaries. Use the Add operator to add your own boundaries.
 public typealias BoundaryList = AnyBoundaryList<
     Empty, Empty, Empty, Empty, Empty,
     Empty, Empty, Empty, Empty, Empty,
@@ -58,8 +62,8 @@ public typealias BoundaryList = AnyBoundaryList<
     Empty, Empty, Empty, Empty, Empty
 >
 
-@dynamicMemberLookup
-public struct AnyBoundaryList<
+/// A type earasure for `BoundaryListProtocol`, it dynamically look up for boundary input ports.
+@dynamicMemberLookup public struct AnyBoundaryList<
     Boundary1: BoundaryProtocol, Boundary2: BoundaryProtocol, Boundary3: BoundaryProtocol, Boundary4: BoundaryProtocol, Boundary5: BoundaryProtocol,
     Boundary6: BoundaryProtocol, Boundary7: BoundaryProtocol, Boundary8: BoundaryProtocol, Boundary9: BoundaryProtocol, Boundary10: BoundaryProtocol,
     Boundary11: BoundaryProtocol, Boundary12: BoundaryProtocol, Boundary13: BoundaryProtocol, Boundary14: BoundaryProtocol, Boundary15: BoundaryProtocol,
@@ -91,6 +95,9 @@ public struct AnyBoundaryList<
 }
 
 public extension AnyBoundaryList where LastDependency == Empty {
+    /// Add operator inserts a boundary in the first position of the list by the generic type you pass.
+    /// the last item will be dropped. So you can only add a boundary if the last position has an empty boundary.
+    /// You can only add types conforming to BoundaryProtocol.
     typealias Add<Boundary: BoundaryProtocol> = AnyBoundaryList<
         Boundary, Boundary1, Boundary2, Boundary3, Boundary4, Boundary5, Boundary6, Boundary7, Boundary8, Boundary9, Boundary10,
         Boundary11, Boundary12, Boundary13, Boundary14, Boundary15, Boundary16, Boundary17, Boundary18, Boundary19
@@ -98,82 +105,102 @@ public extension AnyBoundaryList where LastDependency == Empty {
 }
 
 public extension AnyBoundaryList {
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary1, InputPort<T>>) -> T {
         return boundary1[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary2, InputPort<T>>) -> T {
         return boundary2[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary3, InputPort<T>>) -> T {
         return boundary3[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary4, InputPort<T>>) -> T {
         return boundary4[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary5, InputPort<T>>) -> T {
         return boundary5[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary6, InputPort<T>>) -> T {
         return boundary6[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary7, InputPort<T>>) -> T {
         return boundary7[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary8, InputPort<T>>) -> T {
         return boundary8[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary9, InputPort<T>>) -> T {
         return boundary9[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary10, InputPort<T>>) -> T {
         return boundary10[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary11, InputPort<T>>) -> T {
         return boundary11[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary12, InputPort<T>>) -> T {
         return boundary12[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary13, InputPort<T>>) -> T {
         return boundary13[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary14, InputPort<T>>) -> T {
         return boundary14[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary15, InputPort<T>>) -> T {
         return boundary15[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary16, InputPort<T>>) -> T {
         return boundary16[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary17, InputPort<T>>) -> T {
         return boundary17[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary18, InputPort<T>>) -> T {
         return boundary18[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary19, InputPort<T>>) -> T {
         return boundary19[keyPath: dynamicMember].implementation
     }
     
+    /// Dynamic Look-Up for InputPort of Dependencies.
     subscript<T>(dynamicMember dynamicMember: KeyPath<Boundary20, InputPort<T>>) -> T {
         return boundary20[keyPath: dynamicMember].implementation
     }
