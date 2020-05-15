@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// This is a protocol listing 10 boundary associatedtypes. This is only for internal use
+/// This is a protocol listing 20 boundary associatedtypes. This is only for internal use
 /// please use the concrete type BoundaryList instead.
 public protocol BoundaryListProtocol {
     associatedtype Boundary1: BoundaryProtocol
