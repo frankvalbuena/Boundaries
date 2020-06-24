@@ -236,7 +236,7 @@ As you can see Container Boundaries give you a big power for composing boundarie
 
 ## Root Boundary
 
-`RootBoundary` is just a subclass of a Container boundary, the only difference is that the root boundary can be built by you root object, in iOS for instance that root object would be the AppDelegate. Following the same example, we can create an Application Boundary inheriting from  `RootBoundary` with the feature boundaries of the app. (See the Container Boundary section for an example). Finally you can create an instance of the root boundary and start your app, always retain the root boundary as it contains the boundary graph, and each boundary can contain objects. See the example below:
+`RootBoundary` is just a subclass of a Container boundary, the only difference is that the root boundary can be built by your root object, in iOS for instance that root object would be the AppDelegate. Following the same example, we can create an Application Boundary inheriting from  `RootBoundary` with the feature boundaries of the app. (See the Container Boundary section for an example). Finally you can create an instance of the root boundary and start your app, always retain the root boundary as it contains the boundary graph, and each boundary can contain objects. See the example below:
 
 ```swift
 
