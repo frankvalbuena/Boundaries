@@ -39,7 +39,7 @@ A boundary can be seen as a factory for objects. For declaring a boundary you cr
 ```swift
 import Boundaries
 
-// A boundary for the Model Layer. Every boundary must be a class inheraing from Boundary 
+// A boundary for the Model Layer. Every boundary must be a class inheriting from Boundary 
 final class ModelBoundary: Boundary {
     // By declaring this as a computed property a new object will be created every time this object is requested.
     var profileValidator: ProfileValidator {
